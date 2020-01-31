@@ -15,15 +15,14 @@ END_IF
 
 IF bReset THEN
   iCounter := 0;
-END_IF
-]]></ST>
+END_IF]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
       <LineId Id="6" Count="1" />
       <LineId Id="12" Count="0" />
       <LineId Id="11" Count="0" />
-      <LineId Id="13" Count="2" />
+      <LineId Id="13" Count="1" />
     </LineIds>
   </POU>
 </TcPlcObject>
