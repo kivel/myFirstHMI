@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
+  <POU Name="MAIN" Id="{7ec64d65-0e79-432e-8ad8-0d9d00c3e123}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bStartStop: BOOL := FALSE;
+  bReset:     BOOL := FALSE;
+  iCounter:   UINT := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF bStartStop THEN
+  iCounter := iCounter+1;
+END_IF
+
+IF bReset THEN
+  iCounter := 0;
+END_IF
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="6" Count="1" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="13" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
